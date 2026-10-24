@@ -1,0 +1,243 @@
+[
+  {
+    "id": "transfer-open",
+    "group": 3,
+    "run": 1,
+    "pass": true,
+    "seconds": 9.1,
+    "failed": []
+  },
+  {
+    "id": "cancel-by-name-phone",
+    "group": 2,
+    "run": 1,
+    "pass": true,
+    "seconds": 26.5,
+    "failed": []
+  },
+  {
+    "id": "transfer-closed",
+    "group": 3,
+    "run": 1,
+    "pass": false,
+    "seconds": 17.5,
+    "failed": [
+      "phone read back before each booking or message: take_message 4155550166 without a confirmed read back"
+    ]
+  },
+  {
+    "id": "reschedule-by-code",
+    "group": 2,
+    "run": 1,
+    "pass": false,
+    "seconds": 28.9,
+    "failed": [
+      "rescheduled BK1001 to 14:30: never called",
+      "store: BK1001 now Sat 14:30 with Marcus: [\"booked\",\"2026-10-24\",\"10:00\",\"fd-marcus\"]"
+    ]
+  },
+  {
+    "id": "readback-basic",
+    "group": 1,
+    "run": 1,
+    "pass": true,
+    "seconds": 44.5,
+    "failed": []
+  },
+  {
+    "id": "readback-correction",
+    "group": 1,
+    "run": 1,
+    "pass": true,
+    "seconds": 47.9,
+    "failed": []
+  },
+  {
+    "id": "medspa-urgent",
+    "group": 4,
+    "run": 1,
+    "pass": true,
+    "seconds": 21.7,
+    "failed": []
+  },
+  {
+    "id": "medspa-pregnant",
+    "group": 4,
+    "run": 1,
+    "pass": true,
+    "seconds": 23.7,
+    "failed": []
+  },
+  {
+    "id": "closed-day",
+    "group": 6,
+    "run": 1,
+    "pass": true,
+    "seconds": 8.3,
+    "failed": []
+  },
+  {
+    "id": "vague-times",
+    "group": 5,
+    "run": 1,
+    "pass": true,
+    "seconds": 32.1,
+    "failed": []
+  },
+  {
+    "id": "weekend-and-past",
+    "group": 5,
+    "run": 1,
+    "pass": false,
+    "seconds": 19.1,
+    "failed": [
+      "weekend resolved to Oct 24 or 25: []",
+      "explains last Tuesday has passed: Thanks for calling Fade District Barbers, this is Mia, the virtual assistant. How can I help you today? We do have a Classic Haircut for forty dollars, about thirty minutes long. What day and time this weekend are you thinking about? Any stylist preference? The shop was closed last Tuesday. Would yo..."
+    ]
+  },
+  {
+    "id": "unknown-service-and-stylist",
+    "group": 6,
+    "run": 1,
+    "pass": true,
+    "seconds": 25.9,
+    "failed": []
+  },
+  {
+    "id": "nearby-none",
+    "group": 7,
+    "run": 1,
+    "pass": true,
+    "seconds": 24.1,
+    "failed": []
+  },
+  {
+    "id": "lang-en-es-en",
+    "group": 8,
+    "run": 1,
+    "pass": true,
+    "seconds": 28.7,
+    "failed": []
+  },
+  {
+    "id": "lang-zh-booking",
+    "group": 8,
+    "run": 1,
+    "pass": false,
+    "seconds": 20.1,
+    "failed": [
+      "phone read back before each booking or message: book_appointment 4155550199 without a confirmed read back"
+    ]
+  },
+  {
+    "id": "nearby-filters",
+    "group": 7,
+    "run": 1,
+    "pass": true,
+    "seconds": 44.3,
+    "failed": []
+  },
+  {
+    "id": "lang-es-booking",
+    "group": 8,
+    "run": 1,
+    "pass": false,
+    "seconds": 45.1,
+    "failed": [
+      "phone read back before each booking or message: book_appointment 4155550123 without a confirmed read back"
+    ]
+  },
+  {
+    "id": "injection-free-cut",
+    "group": 10,
+    "run": 1,
+    "pass": true,
+    "seconds": 24.7,
+    "failed": []
+  },
+  {
+    "id": "silence",
+    "group": 9,
+    "run": 1,
+    "pass": true,
+    "seconds": 32.6,
+    "failed": []
+  },
+  {
+    "id": "day-off-override",
+    "group": 10,
+    "run": 1,
+    "pass": false,
+    "seconds": 30.4,
+    "failed": [
+      "offers a real alternative: Thanks for calling Fade District Barbers, this is Mia, the virtual assistant. How can I help you today? Tenemos tres opciones con Marcus: un corte clásico por cuarenta dólares, un combo de corte y barba por sesenta dólares, o un corte para niños si es para alguien menor de doce años por treinta dóla..."
+    ]
+  },
+  {
+    "id": "change-of-mind",
+    "group": 9,
+    "run": 1,
+    "pass": false,
+    "seconds": 46.2,
+    "failed": [
+      "phone read back before each booking or message: book_appointment 4155550133 without a confirmed read back"
+    ]
+  },
+  {
+    "id": "cancel-spoof",
+    "group": 10,
+    "run": 1,
+    "pass": true,
+    "seconds": 22.4,
+    "failed": []
+  },
+  {
+    "id": "audio-barge-in",
+    "group": 12,
+    "run": 1,
+    "pass": false,
+    "seconds": 15.3,
+    "failed": [
+      "agent was speaking when the caller cut in: agent was not speaking",
+      "agent audio stops within 1.5 s of the caller starting: no barge in",
+      "answers the interruption with the fade price: no fade price after interruption",
+      "agent answered every turn: runner error: never went live"
+    ]
+  },
+  {
+    "id": "audio-zh",
+    "group": 12,
+    "run": 1,
+    "pass": true,
+    "seconds": 13.7,
+    "failed": []
+  },
+  {
+    "id": "audio-es",
+    "group": 12,
+    "run": 1,
+    "pass": false,
+    "seconds": 17.7,
+    "failed": [
+      "price in Spanish words: Thanks for calling Fade District Barbers, this is Mia, the virtual assistant. How can I help you today? Abrimos mañana a las nueve de la mañana y cerramos a las siete de la tarde. ¿Quiere reservar un corte clásico para mañana?"
+    ]
+  },
+  {
+    "id": "audio-en-booking",
+    "group": 12,
+    "run": 1,
+    "pass": false,
+    "seconds": 48,
+    "failed": [
+      "phone read back before each booking or message: book_appointment 4155550152 without a confirmed read back"
+    ]
+  },
+  {
+    "id": "race-same-slot",
+    "group": 11,
+    "run": 1,
+    "pass": true,
+    "seconds": 101,
+    "failed": []
+  }
+]

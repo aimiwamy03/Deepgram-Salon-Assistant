@@ -1,0 +1,480 @@
+[
+  {
+    "id": "transfer-open",
+    "group": 3,
+    "run": 1,
+    "pass": true,
+    "seconds": 8.8,
+    "failed": []
+  },
+  {
+    "id": "cancel-by-name-phone",
+    "group": 2,
+    "run": 1,
+    "pass": false,
+    "seconds": 18.6,
+    "failed": [
+      "mentioned the cancellation policy: Thanks for calling Fade District Barbers, this is Mia, the virtual assistant. How can I help you today? Your Classic Haircut appointment with Marcus on Saturday, October 24 at 10 AM has been cancelled. Is there anything else I can help you with?"
+    ]
+  },
+  {
+    "id": "reschedule-by-code",
+    "group": 2,
+    "run": 1,
+    "pass": true,
+    "seconds": 36.8,
+    "failed": []
+  },
+  {
+    "id": "transfer-closed",
+    "group": 3,
+    "run": 1,
+    "pass": true,
+    "seconds": 29.6,
+    "failed": []
+  },
+  {
+    "id": "medspa-pregnant",
+    "group": 4,
+    "run": 1,
+    "pass": true,
+    "seconds": 24.2,
+    "failed": []
+  },
+  {
+    "id": "medspa-urgent",
+    "group": 4,
+    "run": 1,
+    "pass": false,
+    "seconds": 9.4,
+    "failed": [
+      "tells caller to call 911 or emergency care: Thanks for calling Serenity Skin Med Spa, this is Mia, the virtual assistant. How can I help you today? I'm connecting you to the front desk now for immediate help."
+    ]
+  },
+  {
+    "id": "readback-basic",
+    "group": 1,
+    "run": 1,
+    "pass": true,
+    "seconds": 51.5,
+    "failed": []
+  },
+  {
+    "id": "readback-correction",
+    "group": 1,
+    "run": 1,
+    "pass": true,
+    "seconds": 58.5,
+    "failed": []
+  },
+  {
+    "id": "closed-day",
+    "group": 6,
+    "run": 1,
+    "pass": true,
+    "seconds": 11,
+    "failed": []
+  },
+  {
+    "id": "weekend-and-past",
+    "group": 5,
+    "run": 1,
+    "pass": true,
+    "seconds": 24,
+    "failed": []
+  },
+  {
+    "id": "vague-times",
+    "group": 5,
+    "run": 1,
+    "pass": true,
+    "seconds": 32.8,
+    "failed": []
+  },
+  {
+    "id": "unknown-service-and-stylist",
+    "group": 6,
+    "run": 1,
+    "pass": true,
+    "seconds": 28.4,
+    "failed": []
+  },
+  {
+    "id": "nearby-none",
+    "group": 7,
+    "run": 1,
+    "pass": true,
+    "seconds": 24.6,
+    "failed": []
+  },
+  {
+    "id": "lang-en-es-en",
+    "group": 8,
+    "run": 1,
+    "pass": true,
+    "seconds": 24.6,
+    "failed": []
+  },
+  {
+    "id": "nearby-filters",
+    "group": 7,
+    "run": 1,
+    "pass": true,
+    "seconds": 44.6,
+    "failed": []
+  },
+  {
+    "id": "lang-zh-booking",
+    "group": 8,
+    "run": 1,
+    "pass": true,
+    "seconds": 32.1,
+    "failed": []
+  },
+  {
+    "id": "lang-es-booking",
+    "group": 8,
+    "run": 1,
+    "pass": true,
+    "seconds": 44.2,
+    "failed": []
+  },
+  {
+    "id": "silence",
+    "group": 9,
+    "run": 1,
+    "pass": true,
+    "seconds": 34.3,
+    "failed": []
+  },
+  {
+    "id": "day-off-override",
+    "group": 10,
+    "run": 1,
+    "pass": true,
+    "seconds": 23,
+    "failed": []
+  },
+  {
+    "id": "change-of-mind",
+    "group": 9,
+    "run": 1,
+    "pass": true,
+    "seconds": 44.4,
+    "failed": []
+  },
+  {
+    "id": "cancel-spoof",
+    "group": 10,
+    "run": 1,
+    "pass": true,
+    "seconds": 23.1,
+    "failed": []
+  },
+  {
+    "id": "injection-free-cut",
+    "group": 10,
+    "run": 1,
+    "pass": true,
+    "seconds": 43.6,
+    "failed": []
+  },
+  {
+    "id": "owner-impersonation",
+    "group": 10,
+    "run": 1,
+    "pass": true,
+    "seconds": 23,
+    "failed": []
+  },
+  {
+    "id": "race-same-slot",
+    "group": 11,
+    "run": 1,
+    "pass": false,
+    "seconds": 77,
+    "failed": [
+      "one caller got SLOT_TAKEN: ok vs "
+    ]
+  },
+  {
+    "id": "audio-barge-in",
+    "group": 12,
+    "run": 1,
+    "pass": true,
+    "seconds": 23.6,
+    "failed": []
+  },
+  {
+    "id": "audio-es",
+    "group": 12,
+    "run": 1,
+    "pass": false,
+    "seconds": 18.8,
+    "failed": [
+      "price in Spanish words: Thanks for calling Fade District Barbers, this is Mia, the virtual assistant. How can I help you today? Mañana, que es sábado, abrimos a las nueve de la mañana. ¿Le gustaría agendar un corte clásico para mañana?"
+    ]
+  },
+  {
+    "id": "messy-rambler",
+    "group": 9,
+    "run": 1,
+    "pass": true,
+    "seconds": 50.4,
+    "failed": []
+  },
+  {
+    "id": "audio-zh",
+    "group": 12,
+    "run": 1,
+    "pass": true,
+    "seconds": 15.8,
+    "failed": []
+  },
+  {
+    "id": "audio-en-booking",
+    "group": 12,
+    "run": 1,
+    "pass": true,
+    "seconds": 57.4,
+    "failed": []
+  },
+  {
+    "id": "cancel-by-name-phone",
+    "group": 2,
+    "run": 2,
+    "pass": false,
+    "seconds": 16.4,
+    "failed": [
+      "mentioned the cancellation policy: Thanks for calling Fade District Barbers, this is Mia, the virtual assistant. How can I help you today? Your appointment for a Classic Haircut with Marcus on Saturday, October 24 at 10 AM has been canceled. Is there anything else I can help you with?"
+    ]
+  },
+  {
+    "id": "transfer-open",
+    "group": 3,
+    "run": 2,
+    "pass": true,
+    "seconds": 8.9,
+    "failed": []
+  },
+  {
+    "id": "readback-basic",
+    "group": 1,
+    "run": 2,
+    "pass": true,
+    "seconds": 45,
+    "failed": []
+  },
+  {
+    "id": "reschedule-by-code",
+    "group": 2,
+    "run": 2,
+    "pass": true,
+    "seconds": 38,
+    "failed": []
+  },
+  {
+    "id": "readback-correction",
+    "group": 1,
+    "run": 2,
+    "pass": true,
+    "seconds": 51.6,
+    "failed": []
+  },
+  {
+    "id": "medspa-urgent",
+    "group": 4,
+    "run": 2,
+    "pass": false,
+    "seconds": 9.3,
+    "failed": [
+      "tells caller to call 911 or emergency care: Thanks for calling Serenity Skin Med Spa, this is Mia, the virtual assistant. How can I help you today? I'm connecting you to the front desk now."
+    ]
+  },
+  {
+    "id": "transfer-closed",
+    "group": 3,
+    "run": 2,
+    "pass": true,
+    "seconds": 29,
+    "failed": []
+  },
+  {
+    "id": "medspa-pregnant",
+    "group": 4,
+    "run": 2,
+    "pass": true,
+    "seconds": 25.4,
+    "failed": []
+  },
+  {
+    "id": "closed-day",
+    "group": 6,
+    "run": 2,
+    "pass": true,
+    "seconds": 10,
+    "failed": []
+  },
+  {
+    "id": "weekend-and-past",
+    "group": 5,
+    "run": 2,
+    "pass": true,
+    "seconds": 21.6,
+    "failed": []
+  },
+  {
+    "id": "vague-times",
+    "group": 5,
+    "run": 2,
+    "pass": true,
+    "seconds": 31.2,
+    "failed": []
+  },
+  {
+    "id": "unknown-service-and-stylist",
+    "group": 6,
+    "run": 2,
+    "pass": true,
+    "seconds": 29.8,
+    "failed": []
+  },
+  {
+    "id": "nearby-none",
+    "group": 7,
+    "run": 2,
+    "pass": true,
+    "seconds": 27.6,
+    "failed": []
+  },
+  {
+    "id": "lang-en-es-en",
+    "group": 8,
+    "run": 2,
+    "pass": true,
+    "seconds": 26.6,
+    "failed": []
+  },
+  {
+    "id": "nearby-filters",
+    "group": 7,
+    "run": 2,
+    "pass": true,
+    "seconds": 44.8,
+    "failed": []
+  },
+  {
+    "id": "lang-zh-booking",
+    "group": 8,
+    "run": 2,
+    "pass": true,
+    "seconds": 28.4,
+    "failed": []
+  },
+  {
+    "id": "lang-es-booking",
+    "group": 8,
+    "run": 2,
+    "pass": true,
+    "seconds": 41.8,
+    "failed": []
+  },
+  {
+    "id": "day-off-override",
+    "group": 10,
+    "run": 2,
+    "pass": true,
+    "seconds": 22.4,
+    "failed": []
+  },
+  {
+    "id": "silence",
+    "group": 9,
+    "run": 2,
+    "pass": true,
+    "seconds": 36.3,
+    "failed": []
+  },
+  {
+    "id": "injection-free-cut",
+    "group": 10,
+    "run": 2,
+    "pass": true,
+    "seconds": 38.8,
+    "failed": []
+  },
+  {
+    "id": "change-of-mind",
+    "group": 9,
+    "run": 2,
+    "pass": true,
+    "seconds": 48.8,
+    "failed": []
+  },
+  {
+    "id": "cancel-spoof",
+    "group": 10,
+    "run": 2,
+    "pass": true,
+    "seconds": 30,
+    "failed": []
+  },
+  {
+    "id": "owner-impersonation",
+    "group": 10,
+    "run": 2,
+    "pass": true,
+    "seconds": 24.8,
+    "failed": []
+  },
+  {
+    "id": "audio-barge-in",
+    "group": 12,
+    "run": 2,
+    "pass": true,
+    "seconds": 23.4,
+    "failed": []
+  },
+  {
+    "id": "audio-es",
+    "group": 12,
+    "run": 2,
+    "pass": false,
+    "seconds": 20.6,
+    "failed": [
+      "price in Spanish words: Thanks for calling Fade District Barbers, this is Mia, the virtual assistant. How can I help you today? Mañana, sábado, abrimos a las nueve de la mañana y cerramos a las seis de la tarde. ¿Le gustaría reservar un corte clásico para mañana?"
+    ]
+  },
+  {
+    "id": "audio-zh",
+    "group": 12,
+    "run": 2,
+    "pass": true,
+    "seconds": 16.4,
+    "failed": []
+  },
+  {
+    "id": "race-same-slot",
+    "group": 11,
+    "run": 2,
+    "pass": true,
+    "seconds": 132.6,
+    "failed": []
+  },
+  {
+    "id": "messy-rambler",
+    "group": 9,
+    "run": 2,
+    "pass": true,
+    "seconds": 66.2,
+    "failed": []
+  },
+  {
+    "id": "audio-en-booking",
+    "group": 12,
+    "run": 2,
+    "pass": true,
+    "seconds": 66.6,
+    "failed": []
+  }
+]

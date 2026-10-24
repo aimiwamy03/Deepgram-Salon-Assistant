@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Receptionist Demo</title>
+<style>
+  :root { --ink:#1d1b22; --muted:#6b6672; --accent:#b4527a; --bg:#faf7f8; --card:#fff; --line:#ece6ea; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:15px/1.45 system-ui, -apple-system, Segoe UI, sans-serif; color:var(--ink); background:var(--bg); }
+  header { padding:20px 24px 8px; }
+  h1 { margin:0; font-size:20px; }
+  header p { margin:4px 0 0; color:var(--muted); }
+  main { display:grid; grid-template-columns: 1.4fr 1fr; gap:16px; padding:16px 24px 32px; }
+  @media (max-width: 860px) { main { grid-template-columns:1fr; } }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; }
+  .controls { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-bottom:12px; }
+  select, button { font:inherit; padding:8px 12px; border-radius:8px; border:1px solid var(--line); background:#fff; }
+  #call { background:var(--accent); color:#fff; border:none; padding:10px 18px; font-weight:600; cursor:pointer; }
+  #call.live { background:#333; }
+  #status { color:var(--muted); }
+  #transcript { height:420px; overflow-y:auto; display:flex; flex-direction:column; gap:8px; }
+  .msg { max-width:80%; padding:8px 12px; border-radius:12px; }
+  .user { align-self:flex-end; background:#efe7ff; }
+  .assistant { align-self:flex-start; background:#fbe9f0; }
+  .sys { align-self:center; color:var(--muted); font-size:13px; }
+  h2 { font-size:15px; margin:0 0 8px; }
+  #tools { font:12px/1.4 ui-monospace, Menlo, monospace; max-height:260px; overflow-y:auto; white-space:pre-wrap; }
+  .tool { border-top:1px solid var(--line); padding:6px 0; }
+  #state { font-size:13px; }
+  .hint { color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>AI Receptionist Demo</h1>
+  <p>Talk to Mia, the virtual front desk. Try "I'd like a skin fade tomorrow afternoon" or "Any barbers open near 94609?"</p>
+</header>
+<main>
+  <section class="card">
+    <div class="controls">
+      <label>Answering for <select id="business"></select></label>
+      <button id="call">Start call</button>
+      <span id="status">Ready</span>
+    </div>
+    <div id="transcript" aria-live="polite"></div>
+    <p class="hint">Use headphones so Mia does not hear herself. Chrome works best.</p>
+  </section>
+  <section>
+    <div class="card" style="margin-bottom:16px">
+      <h2>Tool calls</h2>
+      <div id="tools"><span class="hint">Tool calls show up here during a call.</span></div>
+    </div>
+    <div class="card" style="margin-bottom:16px">
+      <h2>Bookings and messages</h2>
+      <div id="state" class="hint">None yet.</div>
+    </div>
+    <div class="card">
+      <h2>Demo controls</h2>
+      <button id="steal">Another caller takes the first offered slot</button>
+      <p class="hint">Use this after Mia offers times, then accept that time to see double booking prevention.</p>
+    </div>
+  </section>
+</main>
+<script src="digits.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

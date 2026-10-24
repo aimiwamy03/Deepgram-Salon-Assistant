@@ -1,0 +1,20 @@
+[
+  {
+    "id": "audio-es",
+    "group": 12,
+    "run": 1,
+    "pass": false,
+    "seconds": 18.4,
+    "failed": [
+      "price in Spanish words: Thanks for calling Fade District Barbers, this is Mia, the virtual assistant. How can I help you today? Mañana, sábado, abrimos a las nueve de la mañana. ¿Le gustaría reservar un corte clásico para mañana?"
+    ]
+  },
+  {
+    "id": "audio-barge-in",
+    "group": 12,
+    "run": 1,
+    "pass": true,
+    "seconds": 24.8,
+    "failed": []
+  }
+]

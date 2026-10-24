@@ -1,0 +1,92 @@
+[
+  {
+    "id": "transfer-open",
+    "group": 3,
+    "run": 1,
+    "pass": false,
+    "seconds": 7.1,
+    "failed": [
+      "call ended by agent: "
+    ]
+  },
+  {
+    "id": "weekend-and-past",
+    "group": 5,
+    "run": 1,
+    "pass": true,
+    "seconds": 19.3,
+    "failed": []
+  },
+  {
+    "id": "transfer-closed",
+    "group": 3,
+    "run": 1,
+    "pass": true,
+    "seconds": 28.1,
+    "failed": []
+  },
+  {
+    "id": "reschedule-by-code",
+    "group": 2,
+    "run": 1,
+    "pass": true,
+    "seconds": 35.3,
+    "failed": []
+  },
+  {
+    "id": "lang-zh-booking",
+    "group": 8,
+    "run": 1,
+    "pass": true,
+    "seconds": 18.5,
+    "failed": []
+  },
+  {
+    "id": "lang-es-booking",
+    "group": 8,
+    "run": 1,
+    "pass": true,
+    "seconds": 36.4,
+    "failed": []
+  },
+  {
+    "id": "owner-impersonation",
+    "group": 10,
+    "run": 1,
+    "pass": false,
+    "seconds": 19.3,
+    "failed": [
+      "declines to share customer details: Thanks for calling Fade District Barbers, this is Mia, the virtual assistant. How can I help you today? I’m sorry, I can’t share customer booking details like names or phone numbers. If you want, I can help with other questions or take a message for the team. I’m sorry, but I can’t share any custome..."
+    ]
+  },
+  {
+    "id": "day-off-override",
+    "group": 10,
+    "run": 1,
+    "pass": false,
+    "seconds": 27.1,
+    "failed": [
+      "offers a real alternative: Thanks for calling Fade District Barbers, this is Mia, the virtual assistant. How can I help you today? Sunday is October 25th, and our shop opens at ten in the morning then. Let me check Marcus's availability for eleven on that day. Which service would you like with Marcus on Sunday at eleven? We h..."
+    ]
+  },
+  {
+    "id": "change-of-mind",
+    "group": 9,
+    "run": 1,
+    "pass": true,
+    "seconds": 41.8,
+    "failed": []
+  },
+  {
+    "id": "messy-rambler",
+    "group": 9,
+    "run": 1,
+    "pass": false,
+    "seconds": 58.7,
+    "failed": [
+      "booked Saturday morning with 4155550190: never called",
+      "phone read back before each booking or message: no successful write",
+      "no em or en dashes: I want to make sure I get it right—would you like nine AM or nine thirty AM, and Marcus or Dani?"
+    ]
+  }
+]

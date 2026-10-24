@@ -1,0 +1,7 @@
+node_modules/
+.env
+cache/
+audio/
+*.cache
+call-audio/
+tts-cache/

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "audio-en-booking",
+    "group": 12,
+    "run": 1,
+    "pass": true,
+    "seconds": 54.6,
+    "failed": []
+  },
+  {
+    "id": "audio-barge-in",
+    "group": 12,
+    "run": 1,
+    "pass": false,
+    "seconds": 55.2,
+    "failed": [
+      "agent was speaking when the caller cut in: agent was not speaking",
+      "agent audio stops within 1.5 s of the caller starting: 370 audio chunks kept coming after the interruption (UserStartedSpeaking at 43550 ms)"
+    ]
+  },
+  {
+    "id": "audio-zh",
+    "group": 12,
+    "run": 1,
+    "pass": true,
+    "seconds": 16.8,
+    "failed": []
+  },
+  {
+    "id": "audio-es",
+    "group": 12,
+    "run": 1,
+    "pass": false,
+    "seconds": 18.4,
+    "failed": [
+      "price in Spanish words: Thanks for calling Fade District Barbers, this is Mia, the virtual assistant. How can I help you today? Mañana, sábado, abrimos a las nueve de la mañana. ¿Le gustaría reservar un corte clásico para mañana?"
+    ]
+  }
+]

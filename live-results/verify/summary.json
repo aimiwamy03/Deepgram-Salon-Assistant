@@ -1,0 +1,34 @@
+[
+  {
+    "id": "medspa-urgent",
+    "group": 4,
+    "run": 1,
+    "pass": true,
+    "seconds": 17.8,
+    "failed": []
+  },
+  {
+    "id": "medspa-urgent",
+    "group": 4,
+    "run": 2,
+    "pass": true,
+    "seconds": 19.2,
+    "failed": []
+  },
+  {
+    "id": "cancel-by-name-phone",
+    "group": 2,
+    "run": 1,
+    "pass": true,
+    "seconds": 31.4,
+    "failed": []
+  },
+  {
+    "id": "cancel-by-name-phone",
+    "group": 2,
+    "run": 2,
+    "pass": true,
+    "seconds": 32.8,
+    "failed": []
+  }
+]

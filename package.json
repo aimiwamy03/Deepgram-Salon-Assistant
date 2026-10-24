@@ -1,0 +1,26 @@
+{
+  "name": "ai-receptionist-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Browser mic demo of an AI phone receptionist for beauty businesses, built on the Deepgram Voice Agent API",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node data/generate-mock.js",
+    "validate:settings": "node scripts/validate-settings.js",
+    "test": "node --test test/*.test.js",
+    "start:env": "node --env-file=.env server.js",
+    "smoke:live": "node scripts/live-smoke.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ws": "^8.22.0"
+  },
+  "devDependencies": {
+    "ajv": "^8.20.0",
+    "js-yaml": "^4.3.2"
+  }
+}
